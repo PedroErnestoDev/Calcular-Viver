@@ -21,7 +21,7 @@ Além disso, o site traz dicas e informações para aplicar esses dados no dia a
 - Acesse o **Calcular & Viver** pelo link: [https://pedroernestodev.github.io/Calcular-Viver/](#)
 - Copie e Cole o link acima no seu Navegador de preferência
 - Ou Acesse o site apontando a camera do seu celular ou tablet para o qrCode abaixo.
-- 
+- [https://pedroernestodev.github.io/Calcular-Viver/](#)
 
 ---
 
