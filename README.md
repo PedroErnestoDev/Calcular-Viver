@@ -18,8 +18,8 @@ Além disso, o site traz dicas e informações para aplicar esses dados no dia a
 ---
 
 ## 🚀 **Como Acessar o Site**  
--Acesse o **Calcular & Viver** pelo link: [https://pedroernestodev.github.io/Calcular-Viver/](#)
--Copie e Cole o link acima no seu Navegador de preferência
+- Acesse o **Calcular & Viver** pelo link: [https://pedroernestodev.github.io/Calcular-Viver/](#)
+- Copie e Cole o link acima no seu Navegador de preferência
 
 ---
 
