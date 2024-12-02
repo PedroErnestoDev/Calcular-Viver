@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="7dobras.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+          <img src="img/android-chrome-512x512.png" alt="" id="imglogo">
+        </div>
+        <ul id="menudesktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+        </ul>
+        <button id="buttonmenu" onclick="HandleClick()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div id="menumobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+      </div>
+      <div class="container7dobras">
+        <h1 id="tutulo7dobras">7 Dobras</h1>
+        <div>
+          <div class="tituloidade">
+            <label for="">Idade <span id="spanobrigatorio">*</span></label>
+            <input type="text" name="" id="idade" placeholder="Ex: 25" onkeyup="validateidade()" maxlength="3"/>
+            <span id="obrigatorioidade">Obrigatorio</span>
+            <span id="valorinvalidoidade">Valor invalido</span>
+          </div>
+          <div class="titulopeso">
+            <label for="">Peso</label>
+            <input type="text" name="" id="peso" placeholder="Ex: 95" maxlength="3" onkeyup="validatepeso()"/>
+            <span id="valorinvalidopeso">Valor invalido</span>
+          </div>
+        </div>
+        <span id="titulo">Dados do Adipômetro</span>
+        <div class="components">
+            <label for="triceps"
+              >Tríceps <span id="spanobrigatorio">*</span></label
+            >
+            <input
+              type="text"
+              name=""
+              id="triceps"
+              placeholder="Ex: 7mm"
+              maxlength="2"
+              onkeyup="validatetriceps()"
+            />
+            <span id="obrigatoriotriceps">Obrigatorio</span>
+            <span id="valorinvalidotriceps">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="suprailíaca"
+              >Suprailíaca <span id="spanobrigatorio">*</span></label
+            >
+            <input
+              type="text"
+              name=""
+              id="suprailíaca"
+              maxlength="2"
+              onkeyup="validatesuprailiaca()"
+            />
+            <span id="obrigatoriosuprailiaca">Obrigatorio</span>
+            <span id="valorinvalidosuprailiaca">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="peitoral"
+              >Peitoral <span id="spanobrigatorio">*</span></label
+            >
+            <input
+              type="text"
+              name=""
+              id="peitoral"
+              maxlength="2"
+              onkeyup="validatepeitoral()"
+            />
+            <span id="obrigatoriopeitoral">Obrigatorio</span>
+            <span id="valorinvalidopeitoral">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="abdominal"
+              >Abdominal <span id="spanobrigatorio">*</span></label
+            >
+            <input
+              type="text"
+              name=""
+              id="abdominal"
+              maxlength="2"
+              onkeyup="validateabdominal()"
+            />
+            <span id="obrigatorioabdominal">Obrigatorio</span>
+            <span id="valorinvalidoabdominal">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="coxa">Coxa <span id="spanobrigatorio">*</span></label>
+            <input
+              type="text"
+              name=""
+              id="coxa"
+              maxlength="2"
+              onkeyup="validatecoxa()"
+            />
+            <span id="obrigatoriocoxa">Obrigatorio</span>
+            <span id="valorinvalidocoxa">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="subescapular">Subescapular <span id="spanobrigatorio">*</span></label>
+            <input
+              type="text"
+              name=""
+              id="subescapular"
+              maxlength="2"
+              onkeyup="validatesubescapular()"
+            />
+            <span id="obrigatoriosubescapular">Obrigatorio</span>
+            <span id="valorinvalidosubescapular">Valor invalido</span>
+          </div>
+          <div class="components">
+            <label for="axilarmedia">Axilar Média <span id="spanobrigatorio">*</span></label>
+            <input
+              type="text"
+              name=""
+              id="axilarmedia"
+              maxlength="2"
+              onkeyup="validateaxilarmedia()"
+            />
+            <span id="obrigatorioaxilarmedia">Obrigatorio</span>
+            <span id="valorinvalidoaxilarmedia">Valor invalido</span>
+          </div>
+          <span id="titulopg">Seu Percentual de Gordura é</span>
+          <div id="conatinerresult">
+            <div id="resultado"></div>
+          </div>
+          <button id="buttoncalcular">Calcular</button>
+        </div>
+    <script src="7dobras.js"></script>
+</body>
+</html>

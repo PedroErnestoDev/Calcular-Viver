@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="4dobras.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+          <img src="img/android-chrome-512x512.png" alt="" id="imglogo">
+        </div>
+        <ul id="menudesktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+        </ul>
+        <button id="buttonmenu" onclick="HandleClick()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div id="menumobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+      </div>
+      <div class="container4dobras">
+        <h1 id="tutulo4dobras">4 Dobras</h1>
+        <div>
+          <div class="tituloidade">
+            <label for="">Idade <span id="spanobrigatorio">*</span></label>
+            <input type="text" name="" id="idade" placeholder="Ex: 25" onkeyup="validateidade()" maxlength="3"/>
+            <span id="obrigatorioidade">Obrigatorio</span>
+            <span id="valorinvalidoidade">Valor invalido</span>
+          </div>
+          <div class="titulopeso">
+            <label for="">Peso</label>
+            <input type="text" name="" id="peso" placeholder="Ex: 95" maxlength="3" onkeyup="validatepeso()"/>
+            <span id="valorinvalidopeso">Valor invalido</span>
+          </div>
+        </div>
+        <div class="containerinputsradio">
+          <div class="inputradios">
+            <input type="radio" name="sexo" id="radio" onclick="getelementsexo()" value="Homem"/><label for="">Homem <span id="spanobrigatorio">*</span></label>
+          </div>
+          <div class="inputradios">
+            <input type="radio" name="sexo" id="radio" onclick="getelementsexo()" value="Mulher"/><label for="">Mulher <span id="spanobrigatorio">*</span></label>
+          </div>
+        </div>
+        <div>
+          <div class="quatromulher">
+            <div class="components">
+              <label for="triceps">Tríceps <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="triceps" placeholder="Ex: 7mm" maxlength="2" onkeyup="validatetriceps()"/>
+              <span id="obrigatoriotriceps">Obrigatorio</span>
+              <span id="valorinvalidotriceps">Valor invalido</span>
+            </div>
+            <div class="components">
+                <label for="abdominalmulher">Abdominal <span id="spanobrigatorio">*</span></label>
+                <input type="text" name="" id="abdominalmulher" maxlength="2" onkeyup="validateabdominalmulher()"/>
+                <span id="obrigatorioabdominalmulher">Obrigatorio</span>
+                <span id="valorinvalidoabdominalmulher">Valor invalido</span>
+              </div>
+              <div class="components">
+              <label for="coxa">Coxa <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="coxamulher" maxlength="2" onkeyup="validatecoxamulher()"/>
+              <span id="obrigatoriocoxamulher">Obrigatorio</span>
+              <span id="valorinvalidocoxamulher">Valor invalido</span>
+            </div>
+            <div class="components">
+              <label for="suprailíacamulher">Suprailíaca <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="suprailíacamulher" maxlength="2" onkeyup="validatesuprailiacamulher()"/>
+              <span id="obrigatoriosuprailiacamulher">Obrigatorio</span>
+              <span id="valorinvalidosuprailiacamulher">Valor invalido</span>
+            </div>
+          </div>
+          <div class="quatrohomem">
+            <div class="components">
+              <label for="peitoral">Peitoral <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="peitoral" placeholder="Ex: 7mm" maxlength="2" onkeyup="validatepeitoral()"/>
+              <span id="obrigatoriopeitoral">Obrigatorio</span>
+              <span id="valorinvalidopeitoral">Valor invalido</span>
+            </div>
+            <div class="components">
+              <label for="abdominal">Abdominal <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="abdominalhomem" maxlength="2" onkeyup="validateabdominalhomem()"/>
+              <span id="obrigatorioabdominalhomem">Obrigatorio</span>
+              <span id="valorinvalidoabdominalhomem">Valor invalido</span>
+            </div>
+            <div class="components">
+              <label for="coxa">Coxa <span id="spanobrigatorio">*</span></label>
+              <input type="text" name="" id="coxahomem" maxlength="2" onkeyup="validatecoxahomem()"/>
+              <span id="obrigatoriocoxahomem">Obrigatorio</span>
+              <span id="valorinvalidocoxahomem">Valor invalido</span>
+            <div class="components">
+                <label for="suprailíacahomem">Suprailíaca <span id="spanobrigatorio">*</span></label>
+                <input type="text" name="" id="suprailíacahomem" maxlength="2" onkeyup="validatesuprailiacahomem()"/>
+                <span id="obrigatoriosuprailiacahomem">Obrigatorio</span>
+                <span id="valorinvalidosuprailiacahomem">Valor invalido</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <span id="titulopg">Seu Percentual de Gordura é</span>
+      <div id="conatinerresult">
+        <div id="resultado"></div>
+      </div>
+      <button id="buttoncalcular">Calcular</button>
+    <script src="4dobras.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+          <img src="img/android-chrome-512x512.png" alt="" id="imglogo">
+        </div>
+        <ul id="menudesktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+        </ul>
+        <button id="buttonmenu" onclick="HandleClick()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div id="menumobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="imc.html">IMC</a></li>
+          <li><a href="3dobras.html">3 Dobras</a></li>
+          <li><a href="4dobras.html">4 Dobras</a></li>
+          <li><a href="7dobras.html">7 Dobras</a></li>
+      </div>
+    <div class="imccontainer">
+        <h1 id="tituloimc">IMC</h1>
+        <div class="components">
+            <label for="">Peso (Kg)<span id="spanred">*</span></label>
+            <input type="text" id="pesoimc" placeholder="Ex: 95" maxlength="3" onkeyup="validatepeso()">
+            <span id="spanobrigatoriopeso">Obrigatorio</span>
+            <span id="spanvalorinvalidopeso">Valor Invalido</span>
+        </div>
+        <div class="components">
+            <label for="">Altura (m)<span id="spanred">*</span></label>
+            <input type="text" id="alturaimc" placeholder="Ex: 1.80" maxlength="4" onkeyup="validatealtura()">
+            <span id="spanobrigatorioaltura">Obrigatorio</span>
+            <span id="spanvalorinvalidoaltura">Valor Invalido</span>
+        </div>
+        <span id="tituloresultimc">Seu IMC é</span>
+        <div id="resultadonumero">
+        </div>
+        <div id="resultadotexto">
+        </div>
+        
+        <button id="calcularimc">Calcular</button>
+    </div>
+    <script src="imc.js"></script>
+</body>
+</html>

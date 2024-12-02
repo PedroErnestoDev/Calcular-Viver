@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0b1d21;
+    padding: 0px 20px;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color:#a4a4a4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16pt;
+    padding: 0px 50px;
+    
+}
+#buttonmenu{
+    background: transparent;
+    border: none;
+    width: 45px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    display: none;
+}
+#buttonmenu span{
+    height: 9px;
+    width: 45px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.1s all;
+}
+button.active span:nth-child(2){
+    opacity: 0;
+}
+button.active span:nth-child(1){
+    transform: rotate(45deg) translate(9.5px, 9.5px);
+}
+button.active span:nth-child(3){
+    transform: rotate(-45deg) translate(8px, -10px);
+}
+#menudesktop{
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+#menudesktop li a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #0b1d21;
+}
+#menudesktop li a:hover{
+    color:white;
+    
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#menumobile{
+    width: 100vw;
+    height: 55vh;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    background-color: gray;
+    position: absolute;
+    top: 72px;
+    z-index: 10;
+    flex-direction: column;
+    display: none;
+    row-gap: 10px;
+    font-size: 16pt;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+}
+#menumobile.active{
+    display: flex;
+}
+#menumobile a{
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #0b1d21;
+}
+#imglogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.container7dobras{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    width: 340px;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    row-gap: 20px;
+    filter: drop-shadow(4px 4px 10px black);
+    color: #a4a4a4;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+#tutulo7dobras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b1d21;
+    font-size: 32pt;
+    font-weight: 600;
+}
+.tituloidade, .titulopeso, .components{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#titulo{
+    display: flex;
+    font-size: 14pt;
+    color: #545454;
+}
+#spanobrigatorio{
+    color: red;
+}
+input[type="text"]{
+    width: 275px;
+    height: 40px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding-left: 10px;
+    
+}
+.treshomem{
+    display: none;
+}
+.tresmulher{
+    display: none;
+}
+
+input[type="text"]::placeholder{
+    font-size: 10pt;
+}
+#buttoncalcular{
+    height: 45px;
+    font-size: 18pt;
+    border-radius: 10px;
+    background-color: #0b1d21;
+    color: ghostwhite;
+    border: none;
+}
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 32pt;
+    color: red;
+}
+#titulopg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    color: #545454;
+}
+#obrigatorioidade, #obrigatoriotriceps, #obrigatoriosuprailiaca, #obrigatoriopeitoral, #obrigatorioabdominal, #obrigatorioaxilarmedia, #obrigatoriosubescapular, #obrigatoriocoxa{
+    color: red;
+    font-size: 8pt;
+    display: none;
+}
+#valorinvalidoidade, #valorinvalidotriceps, #valorinvalidosuprailiaca, #valorinvalidopeitoral, #valorinvalidoabdominal, #valorinvalidocoxa, #valorinvalidopeso, #valorinvalidoaxilarmedia, #valorinvalidosubescapular{
+    color: red;
+    font-size: 8pt;
+    display: none;
+}
+#conatinerresult{
+    background-color: #f4f4f4;
+    height: 70px;
+    border-radius: 10px;
+    border:2px solid #545454;
+    filter: drop-shadow(1px 1px 2px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #menudesktop{
+        display: none;
+    }
+    #buttonmenu{
+        display: flex;
+    }
+    
+}
+@media (max-width: 884px){
+    #buttonmenu{
+        display: flex;
+    }
+    #menudesktop{
+        display: none;
+    }
+    #menumobile{
+        height: auto;
+        top: 72px;
+    }
+}
